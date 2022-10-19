@@ -6,18 +6,18 @@
 /*   By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 13:17:46 by smayrand          #+#    #+#             */
-/*   Updated: 2022/10/18 15:58:46 by smayrand         ###   ########.fr       */
+/*   Updated: 2022/10/19 12:50:00 by smayrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../minitalk.h"
 
-void	handler_s(int signal, siginfo_t *info, void *context)
+void	handler_s(int signal, siginfo_t *info, void *charlesiii)
 {
 	static int	byte;
 	static char	c;
 
-	(void)context;
+	(void)charlesiii;
 	if (byte == 0)
 		byte = 8;
 	if (signal == SIGUSR2)
@@ -33,8 +33,7 @@ void	handler_s(int signal, siginfo_t *info, void *context)
 			write(1, "\n", 1);
 			kill(info->si_pid, SIGUSR1);
 		}
-		write (1, &c, 1);
-		byte = 8;
+		ft_printf("%c", c);
 		c = 0;
 	}
 }
