@@ -6,7 +6,7 @@
 #    By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/21 14:48:49 by smayrand          #+#    #+#              #
-#    Updated: 2022/10/25 20:10:00 by smayrand         ###   ########.fr        #
+#    Updated: 2022/10/25 21:07:07 by smayrand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,17 +27,17 @@ SRCS_SLAVE = ./srcs/client.c
 LIBFT_A = ./libft/libft.a
 PRINTF_A = ./printf/libftprintf.a
 
-run: all
-	@clear
-	@afplay ./libft/th.wav
-	@open -n -a /Applications/iTerm.app '/Users/smayrand/Desktop/Minitalk_42/'
-	@./server
-
 
 all: aprintf alibft $(NAME)
 	@echo " ==============="
 	@echo $(GREEN) "FULLY	COMPILED" $(NONE)
 	@sleep 1
+
+run: all
+	@clear
+	@afplay ./libft/th.wav
+	@open -n -a /Applications/iTerm.app
+	@./server
 
 aprintf:
 	@$(MAKE) -C ./printf
