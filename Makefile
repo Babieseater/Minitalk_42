@@ -6,7 +6,7 @@
 #    By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/21 14:48:49 by smayrand          #+#    #+#              #
-#    Updated: 2022/10/18 11:35:45 by smayrand         ###   ########.fr        #
+#    Updated: 2022/10/25 20:10:00 by smayrand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,9 +29,10 @@ PRINTF_A = ./printf/libftprintf.a
 
 run: all
 	@clear
-	@./server
-	@(cd)
+	@afplay ./libft/th.wav
 	@open -n -a /Applications/iTerm.app '/Users/smayrand/Desktop/Minitalk_42/'
+	@./server
+
 
 all: aprintf alibft $(NAME)
 	@echo " ==============="
