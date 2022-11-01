@@ -6,7 +6,7 @@
 /*   By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/07 15:30:47 by smayrand          #+#    #+#             */
-/*   Updated: 2022/10/25 22:37:38 by smayrand         ###   ########.fr       */
+/*   Updated: 2022/11/01 15:56:46 by smayrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,4 @@ void	ft_putstr_fd(char *s, int fd)
 			i++;
 		}
 	}
-}
-
-void	ft_putstr(char *s, int fd)
-{
-	write(fd, *s, ft_strllen(*s));
 }
