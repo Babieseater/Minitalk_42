@@ -6,7 +6,7 @@
 /*   By: smayrand <smayrand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 13:17:52 by smayrand          #+#    #+#             */
-/*   Updated: 2022/10/18 15:53:47 by smayrand         ###   ########.fr       */
+/*   Updated: 2022/11/01 13:04:33 by smayrand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,9 @@ int	main(int argc, char **argv)
 {
 	int	pid;
 
-	ft_printf("%s\n","┌────────────────────┐");
-	ft_printf("%s\n","│   Minitalk Client  │");
-	ft_printf("%s\n","└────────────────────┘");
+	ft_printf("%s\n", "┌────────────────────┐");
+	ft_printf("%s\n", "│   Minitalk Client  │");
+	ft_printf("%s\n", "└────────────────────┘");
 	if (argc != 3)
 	{
 		ft_error("Incorrect number of arguments");
